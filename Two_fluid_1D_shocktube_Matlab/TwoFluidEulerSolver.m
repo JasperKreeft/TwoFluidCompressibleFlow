@@ -15,9 +15,11 @@
 %                                                                         %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-clear all
+clear % all
 close all
 clc
+
+addpath(genpath("solver"))
 
 WindowSize
 
@@ -25,8 +27,8 @@ global N L
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-options
-% nr = 3; N = 200; T = 5; time = 3; flux = 3; BC_L = 1; BC_R = 1; limiter = 3; ani = 3;
+% options
+nr = 3; N = 200; T = 5; time = 3; flux = 3; BC_L = 1; BC_R = 1; limiter = 3; ani = 3; movie = false;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mesh
@@ -47,7 +49,7 @@ y = [0 0.2];
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Initial conditions
 
-InitialCondition
+InitialConditions
 
 Q = Prim2Cons(W);
 q = Q;
