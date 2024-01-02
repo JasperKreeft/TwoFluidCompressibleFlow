@@ -1,0 +1,3 @@
+Translating Contact Discontinuity: Wrong solution in combination with Riemann variables for limiting
+
+Closed left and right boundary condition do not work
