@@ -1,0 +1,155 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+
+\begin{document}
+
+
+
+
+\section{Osher}
+
+two rarefaction solution of pressure:
+
+\begin{equation}
+p_{23}=\left[\frac{c_1+c_4-\frac{\gamma-1}{2}(u_4-u_1)}{c_1/p_1^\frac{\gamma-1}{2\gamma}+c_4/p_4^\frac{\gamma-1}{2\gamma}}\right]^\frac{2\gamma}{\gamma-1}
+\end{equation}
+
+\begin{equation}
+u_{23}=\frac{\left(\frac{p_1}{p_4}\right)^\frac{\gamma-1}{2\gamma}\frac{u_1}{c_1}+\frac{u_4}{c_4}+\frac{2}{\gamma-1}\left(\left(\frac{p_1}{p_4}\right)^\frac{\gamma-1}{2\gamma}-1\right)}{\frac{1}{a_1}\left(\frac{p_1}{p_4}\right)^\frac{\gamma-1}{2\gamma}+\frac{1}{a_4}}
+\end{equation}
+
+\begin{equation}
+\rho_2=\rho_1\left(\frac{p_{23}}{p_1}\right)^\frac{1}{\gamma}
+\end{equation}
+
+\begin{equation}
+\rho_3=\rho_4\left(\frac{p_{23}}{p_4}\right)^\frac{1}{\gamma}
+\end{equation}
+
+\begin{equation}
+c_2=c_1\left(\frac{p_{23}}{p_1}\right)^\frac{\gamma-1}{2\gamma}
+\end{equation}
+
+\begin{equation}
+c_3=c_4\left(\frac{p_{23}}{p_4}\right)^\frac{\gamma-1}{2\gamma}
+\end{equation}
+
+% \begin{equation}
+% 
+% \end{equation}
+% 
+% \begin{equation}
+% 
+% \end{equation}
+
+
+\section{Osher}
+Left rarefaction
+\begin{equation}
+u_1+\frac{2}{\gamma-1}a_1=u+\frac{2}{\gamma-1}a
+\end{equation}
+
+If left rarefaction is located in both halfs of the state space
+\begin{equation}
+u-a=0 \quad \Rightarrow \quad u=a
+\end{equation}
+
+\begin{equation}
+u=\frac{\gamma-1}{\gamma+1}u_1+\frac{2}{\gamma+1}a_1
+\end{equation}
+
+Right rarefaction
+\begin{equation}
+u_4-\frac{2}{\gamma-1}a_4=u-\frac{2}{\gamma-1}a
+\end{equation}
+
+\begin{equation}
+u+a=0 \quad \Rightarrow \quad u=-a
+\end{equation}
+
+\begin{equation}
+u=\frac{\gamma-1}{\gamma+1}u_4-\frac{2}{\gamma+1}a_4
+\end{equation}
+
+
+\begin{equation}
+\mathbf{w}=
+\begin{bmatrix}
+\rho\\
+u\\
+p
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\mathbf{q}=
+\begin{bmatrix}
+\rho\\
+\rho u\\
+\rho E
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\mathbf{F}=
+\begin{pmatrix}
+\rho u\\
+\rho u^2+p\\
+\rho Hu
+\end{pmatrix}
+=
+\begin{pmatrix}
+\rho u\\
+\rho u^2+p\\
+\rho Eu+pu
+\end{pmatrix}
+=
+\begin{pmatrix}
+\rho u\\
+\rho u^2+p\\
+\frac{\gamma}{\gamma-1}pu+\frac{1}{2}\rho u^3
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\mathbf{q}=
+\begin{pmatrix}
+w_1\\
+w_1w_2\\
+\frac{1}{\gamma-1}w_3+\frac{1}{2}w_1w_2^2
+\end{pmatrix}
+\end{equation}
+
+
+
+\begin{equation}
+\mathbf{w}=
+\begin{pmatrix}
+q_1\\
+\frac{q_2^2}{q_1}\\
+(\gamma-1)\left[q_3-\frac{q_2^2}{2q_1}\right]
+\end{pmatrix}
+\end{equation}
+
+
+
+Hugoniot curve
+\begin{equation}
+m=\rho_{\mathrm{pre}}|c_s|=\rho_{\mathrm{pre}}a_{\mathrm{pre}}\sqrt{1+\frac{\gamma+1}{2\gamma}\frac{\Delta p}{p_{\mathrm{pre}}}}
+\end{equation}
+Because the mass flux cannot be complex
+
+% \begin{equation}
+% 
+% \end{equation}
+
+
+
+
+
+
+
+
+\end{document}
